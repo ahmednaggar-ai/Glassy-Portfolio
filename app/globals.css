@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.07);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  --blur: 20px;
+}
+
+.light {
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1.5rem;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+.light .glass-card:hover {
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.light .glass-input {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.glass-nav {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.25rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.light .glass-nav {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+.light body {
+  background: #e2e8f0;
+}
+
+.light .page-root {
+  background: #e2e8f0;
+}
+
+.light .page-bg {
+  background: linear-gradient(to bottom, #e2e8f0, #f1f5f9, #e2e8f0);
+}
+
+.section-padding {
+  @apply py-20 px-6;
+}
+
+.section-title {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  @apply text-3xl font-bold text-center mb-10 tracking-tight;
+}
+
+.scroll-margin {
+  scroll-margin-top: 6rem;
+}
+
+.btn-primary {
+  @apply transition-all duration-200;
+}
+
+.btn-glass {
+  @apply bg-white/5 border border-white/20 hover:border-white/40 transition-all;
+}
+
+.skill-bar {
+  @apply flex items-center gap-3 text-sm text-slate-300;
+}
+
+.skill-bar span:last-child {
+  min-width: 6rem;
+}
+
+.skill-fill {
+  @apply flex-1 h-2 bg-white/10 rounded-full overflow-hidden;
+}
+
+.skill-fill::after {
+  content: '';
+  @apply block h-full rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 transition-all duration-1000 ease-out;
+  width: var(--level, 0%);
+}
+
+.tag {
+  @apply inline-block px-3 py-1 text-xs font-medium text-slate-200 bg-white/10 border border-white/10 rounded-full;
+}
+
+.skill-card:hover,
+.experience-card:hover,
+.project-card:hover,
+.cert-card:hover {
+  @apply -translate-y-1;
+}
+
+.light .section-title {
+  @apply text-slate-900;
+}
+
+.light .text-white,
+.light .text-gray-100,
+.light .text-gray-200 {
+  color: rgb(15 23 42);
+}
+
+.light .text-gray-400 {
+  color: rgb(51 65 85);
+}
+
+.light .text-gray-500 {
+  color: rgb(71 85 105);
+}
+
+.light .text-slate-400 {
+  color: rgb(51 65 85);
+}
+
+.light .text-slate-500 {
+  color: rgb(71 85 105);
+}
+
+.light .glass-card .text-white {
+  @apply text-slate-900;
+}
+
+.light .tag {
+  @apply text-slate-700 bg-slate-200/80 border-slate-300/50;
+}
+
+.light footer.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+a:focus-visible,
+button:focus-visible {
+  @apply outline-2 outline-violet-500 outline-offset-2;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

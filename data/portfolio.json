@@ -1,0 +1,235 @@
+{
+  "hero": {
+    "badge": "Frontend Developer",
+    "name": "Ahmed Hossam\nAl Naggar",
+    "title": "Software Development Engineer",
+    "tagline": "Angular & React — Scalable, performant, clean code",
+    "cvUrl": "",
+    "imageTiles": [
+      "/assets/images/heros-tiles/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg",
+      "/assets/images/heros-tiles/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg",
+      "/assets/images/heros-tiles/mohammad-rahmani-LrxSl4ZxoRs-unsplash.jpg"
+    ],
+    "buttons": [
+      {
+        "label": "View Projects",
+        "href": "#projects",
+        "primary": true
+      },
+      {
+        "label": "Download CV",
+        "href": "#",
+        "primary": false
+      },
+      {
+        "label": "Contact Me",
+        "href": "#contact",
+        "primary": false
+      }
+    ]
+  },
+  "about": {
+    "paragraphs": [
+      "Frontend Developer with **3+ years** of experience building modern web applications. I specialize in **Angular** and have strong experience with **React**, focusing on scalable, high-performance, and maintainable code.",
+      "I integrate frontends with **ASP.NET** and **Node.js** backends, and I care about clean architecture, performance optimization, and great UX."
+    ],
+    "tags": [
+      "Angular",
+      "React",
+      "TypeScript",
+      "Clean Code"
+    ]
+  },
+  "skills": [
+    {
+      "title": "Frontend",
+      "color": "violet",
+      "description": "HTML5, CSS3, Sass, Bootstrap, Tailwind",
+      "bars": [
+        {
+          "name": "HTML/CSS",
+          "level": 95
+        },
+        {
+          "name": "Sass / Tailwind",
+          "level": 90
+        }
+      ]
+    },
+    {
+      "title": "JavaScript & Frameworks",
+      "color": "cyan",
+      "description": "JavaScript (ES6+), TypeScript, Angular, React",
+      "bars": [
+        {
+          "name": "Angular",
+          "level": 92
+        },
+        {
+          "name": "React",
+          "level": 85
+        },
+        {
+          "name": "TypeScript",
+          "level": 90
+        }
+      ]
+    },
+    {
+      "title": "UI Libraries",
+      "color": "amber",
+      "description": "PrimeNG, Angular Material, ApexCharts, ECharts",
+      "tags": [
+        "PrimeNG",
+        "Angular Material",
+        "ApexCharts",
+        "ECharts"
+      ]
+    },
+    {
+      "title": "Backend & Tools",
+      "color": "emerald",
+      "description": "Node.js, ASP.NET • Git, GitHub, GitLab • i18n, SEO, Performance",
+      "tags": [
+        "Node.js",
+        "ASP.NET",
+        "Git",
+        "SEO"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Engaz AI",
+      "period": "Jan 2025 – Present",
+      "role": "Frontend Developer",
+      "description": "HR platform & real estate system (NAVI). Refactoring, performance optimization, and scalable architecture."
+    },
+    {
+      "company": "World Trust Soft",
+      "period": "Remote",
+      "role": "Frontend Developer",
+      "description": "Frontend development for enterprise applications."
+    },
+    {
+      "company": "Sortech A Technologies",
+      "period": "",
+      "role": "Frontend Developer",
+      "description": "Web applications and digital products."
+    },
+    {
+      "company": "Gorgov Digital Marketing Agency",
+      "period": "",
+      "role": "Frontend Developer",
+      "description": ""
+    },
+    {
+      "company": "Rsquared Holdings",
+      "period": "",
+      "role": "Frontend Developer",
+      "description": ""
+    }
+  ],
+  "projects": [
+    {
+      "title": "HRM System",
+      "description": "Enterprise HR platform with dashboards and workflows.",
+      "tags": [
+        "Angular",
+        "PrimeNG"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "ERP Platform",
+      "description": "Full-featured ERP with modules and reporting.",
+      "tags": [
+        "Angular",
+        "Node.js"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "CRM System",
+      "description": "Customer relationship management and analytics.",
+      "tags": [
+        "React",
+        "TypeScript"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Real Estate Platform",
+      "description": "NAVI — listings, search, and property management.",
+      "tags": [
+        "Angular",
+        "Tailwind"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Government & E-commerce",
+      "description": "Websites for government and e-commerce clients.",
+      "tags": [
+        "Angular",
+        "ASP.NET"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Portfolio & Dashboards",
+      "description": "Custom dashboards and portfolio sites.",
+      "tags": [
+        "React",
+        "Tailwind"
+      ],
+      "link": "https://github.com/ahmednaggar-ai"
+    }
+  ],
+  "certificates": [
+    {
+      "provider": "Route Academy",
+      "name": "Fullstack Development"
+    },
+    {
+      "provider": "ITI (Mahara-Tech)",
+      "name": "Node.js"
+    },
+    {
+      "provider": "Udemy",
+      "name": "Angular, TypeScript, Git, Node.js",
+      "description": "Various courses"
+    }
+  ],
+  "contact": [
+    {
+      "type": "email",
+      "label": "Email",
+      "value": "ahossamnaggar@gmail.com",
+      "href": "mailto:ahossamnaggar@gmail.com"
+    },
+    {
+      "type": "phone",
+      "label": "Mobile",
+      "value": "01021774359",
+      "href": "tel:01021774359"
+    },
+    {
+      "type": "location",
+      "label": "Location",
+      "value": "Obour City, Egypt"
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "value": "github.com/ahmednaggar-ai",
+      "href": "https://github.com/ahmednaggar-ai"
+    }
+  ],
+  "seo": {
+    "title": "Ahmed Hossam Al Naggar | Frontend Developer",
+    "description": "Software Development Engineer | Frontend Developer specializing in Angular & React. 3+ years building scalable, high-performance web applications.",
+    "keywords": "Frontend Developer, Angular, React, TypeScript, Ahmed Hossam Al Naggar, Web Developer, Egypt",
+    "author": "Ahmed Hossam Al Naggar"
+  }
+}
