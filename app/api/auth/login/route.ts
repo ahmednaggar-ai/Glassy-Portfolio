@@ -22,9 +22,10 @@ export async function POST(request: Request) {
   }
 
   const cookieStore = await cookies()
+  const isProduction = process.env.VERCEL === '1' || process.env.NODE_ENV === 'production'
   cookieStore.set(SESSION_COOKIE, sessionSecret, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: isProduction,
     sameSite: 'lax',
     maxAge: MAX_AGE,
     path: '/',
