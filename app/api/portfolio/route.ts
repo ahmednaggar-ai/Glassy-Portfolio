@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server'
 import { getPortfolioData, savePortfolioData } from '@/lib/portfolio'
 import type { PortfolioData } from '@/lib/types'
 
+// Fix 405 on Vercel: GET+PUT in same route breaks in production without this (Next.js #66647)
+export const dynamic = 'force-dynamic'
+
 // Allow CORS preflight (OPTIONS) so PUT from same-origin succeeds
 export async function OPTIONS() {
   return new NextResponse(null, { status: 204 })
