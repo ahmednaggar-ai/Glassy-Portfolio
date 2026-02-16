@@ -30,8 +30,7 @@
   },
   "about": {
     "paragraphs": [
-      "Frontend Developer with **3+ years** of experience building modern web applications. I specialize in **Angular** and have strong experience with **React**, focusing on scalable, high-performance, and maintainable code.",
-      "I integrate frontends with **ASP.NET** and **Node.js** backends, and I care about clean architecture, performance optimization, and great UX."
+      "I am a Frontend Developer with **4+ years** of experience building scalable, high-performance web, applications across diverse industries. I specialize in **Angular** and have solid experience with **React**, focusing on creating clean, maintainable, and reusable code. I excel at translating UI/UX designs into responsive, user-friendly interfaces and optimizing performance for complex applications. With working knowledge of backend technologies such as ASP.NET and Node.js, I ensure smooth integration between frontend and backend systems. I am highly collaborative, detail-oriented, and experienced in solving complex problems while delivering projects efficiently and on time."
     ],
     "tags": [
       "Angular",
@@ -100,34 +99,28 @@
   ],
   "experience": [
     {
-      "company": "Engaz AI",
-      "period": "Jan 2025 – Present",
+      "company": "World Trust Soft",
+      "period": "Feb 2026 – Until now (Remote)",
       "role": "Frontend Developer",
-      "description": "HR platform & real estate system (NAVI). Refactoring, performance optimization, and scalable architecture."
+      "description": "Contributed to the development of an ERP platform with Angular, translating \nFigma mockups into scalable, responsive interfaces. Worked cross-functionally \nwith UI/UX and backend teams to ensure seamless API integration and efficient \nbusiness workflows. "
     },
     {
-      "company": "World Trust Soft",
-      "period": "Remote",
+      "company": "Engaz AI",
+      "period": "Nov 2024 – Feb 2026 (Hybrid)",
       "role": "Frontend Developer",
-      "description": "Frontend development for enterprise applications."
+      "description": "Worked on two major projects — an HR platform and NAVI (real estate) — \ndelivering scalable, maintainable frontend solutions. Refactored and \nrestructured the entire project for better architecture, improved performance, \nand easier scalability. Built new features, optimized existing functionalities, and \nresolved reported issues while maintaining clean, reusable, and well\ndocumented code."
     },
     {
       "company": "Sortech A Technologies",
-      "period": "",
+      "period": "Oct 2023 – Nov 2024 (On-site)",
       "role": "Frontend Developer",
-      "description": "Web applications and digital products."
+      "description": "Built and maintained a CRM application in Angular, converting complex designs \ninto interactive, responsive components. Partnered with backend developers for \nefficient integration and maintained performance-optimized, scalable code. "
     },
     {
       "company": "Gorgov Digital Marketing Agency",
-      "period": "",
+      "period": "Oct 2021 – Sep 2023 (Hybrid)",
       "role": "Frontend Developer",
-      "description": ""
-    },
-    {
-      "company": "Rsquared Holdings",
-      "period": "",
-      "role": "Frontend Developer",
-      "description": ""
+      "description": "Developed and maintained user-focused web applications using JavaScript \n(ES6+), Angular, React, and jQuery. Delivered custom solutions for high-traffic \nand government projects such as haj.gov.sa, and built and customized \nWordPress websites and Shopify e-commerce stores with a focus on \nperformance, responsiveness, and cross-browser compatibility. "
     }
   ],
   "projects": [
