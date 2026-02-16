@@ -6,8 +6,17 @@ import type { PortfolioData } from '@/lib/types'
 export const dynamic = 'force-dynamic'
 
 // Allow CORS preflight (OPTIONS) so PUT from same-origin succeeds
-export async function OPTIONS() {
-  return new NextResponse(null, { status: 204 })
+export async function OPTIONS(request: Request) {
+  const origin = request.headers.get('origin') || '*'
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': origin,
+      'Access-Control-Allow-Methods': 'GET, PUT, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Access-Control-Max-Age': '86400',
+    },
+  })
 }
 
 export async function GET() {

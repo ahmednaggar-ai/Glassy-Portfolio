@@ -24,6 +24,20 @@ export function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
+  // CORS preflight for /api/portfolio — respond immediately so browser allows PUT
+  if (pathname === '/api/portfolio' && request.method === 'OPTIONS') {
+    const origin = request.headers.get('origin') || '*'
+    return new NextResponse(null, {
+      status: 204,
+      headers: {
+        'Access-Control-Allow-Origin': origin,
+        'Access-Control-Allow-Methods': 'GET, PUT, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Max-Age': '86400',
+      },
+    })
+  }
+
   // Protect PUT /api/portfolio
   if (pathname === '/api/portfolio' && request.method === 'PUT') {
     if (!isAuthenticated(request)) {
