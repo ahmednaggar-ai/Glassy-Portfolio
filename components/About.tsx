@@ -16,6 +16,7 @@ function renderParagraph(text: string) {
 export function About({ data }: { data: AboutData }) {
   return (
     <section id="about" className="section-padding scroll-margin">
+      <span>sadasd</span>
       <div className="max-w-4xl mx-auto">
         <h2 className="section-title">About Me</h2>
         <div className="glass-card rounded-3xl p-8 md:p-10">
