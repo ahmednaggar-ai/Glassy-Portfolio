@@ -2,6 +2,11 @@ import { NextResponse } from 'next/server'
 import { getPortfolioData, savePortfolioData } from '@/lib/portfolio'
 import type { PortfolioData } from '@/lib/types'
 
+// Allow CORS preflight (OPTIONS) so PUT from same-origin succeeds
+export async function OPTIONS() {
+  return new NextResponse(null, { status: 204 })
+}
+
 export async function GET() {
   try {
     const data = getPortfolioData()
